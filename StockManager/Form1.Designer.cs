@@ -28,7 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.ExitBtn = new System.Windows.Forms.PictureBox();
+            this.MinimizeBtn = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ExitBtn
+            // 
+            this.ExitBtn.Image = ((System.Drawing.Image)(resources.GetObject("ExitBtn.Image")));
+            this.ExitBtn.Location = new System.Drawing.Point(1160, 12);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(47, 47);
+            this.ExitBtn.TabIndex = 0;
+            this.ExitBtn.TabStop = false;
+            // 
+            // MinimizeBtn
+            // 
+            this.MinimizeBtn.Image = ((System.Drawing.Image)(resources.GetObject("MinimizeBtn.Image")));
+            this.MinimizeBtn.Location = new System.Drawing.Point(1105, 12);
+            this.MinimizeBtn.Name = "MinimizeBtn";
+            this.MinimizeBtn.Size = new System.Drawing.Size(49, 50);
+            this.MinimizeBtn.TabIndex = 1;
+            this.MinimizeBtn.TabStop = false;
+            this.MinimizeBtn.Click += new System.EventHandler(this.MinimizeBtn_Click);
             // 
             // Form1
             // 
@@ -36,15 +60,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1219, 661);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Controls.Add(this.MinimizeBtn);
+            this.Controls.Add(this.ExitBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
+            ((System.ComponentModel.ISupportInitialize)(this.ExitBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox ExitBtn;
+        private System.Windows.Forms.PictureBox MinimizeBtn;
     }
 }
 
