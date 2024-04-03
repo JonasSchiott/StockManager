@@ -15,4 +15,17 @@ namespace StockManager
         bool Update(string query);
 
     }
+
+    class MongoDB : IDatabaseAdapter
+    {
+        public bool EstablishConnection()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Update(string query)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

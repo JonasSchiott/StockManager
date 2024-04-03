@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace StockManager
 {
-    public partial class Form1 : Form
+    public partial class ChooseColumns : Form
     {
-        public Form1()
+        public ChooseColumns()
         {
             InitializeComponent();
         }

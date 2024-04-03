@@ -1,6 +1,6 @@
 ﻿namespace StockManager
 {
-    partial class Form1
+    partial class ChooseColumns
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChooseColumns));
             this.ExitBtn = new System.Windows.Forms.PictureBox();
             this.MinimizeBtn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ExitBtn)).BeginInit();
@@ -43,6 +43,7 @@
             this.ExitBtn.Size = new System.Drawing.Size(47, 47);
             this.ExitBtn.TabIndex = 0;
             this.ExitBtn.TabStop = false;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // MinimizeBtn
             // 
@@ -54,7 +55,7 @@
             this.MinimizeBtn.TabStop = false;
             this.MinimizeBtn.Click += new System.EventHandler(this.MinimizeBtn_Click);
             // 
-            // Form1
+            // ChooseColumns
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -63,7 +64,7 @@
             this.Controls.Add(this.MinimizeBtn);
             this.Controls.Add(this.ExitBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "ChooseColumns";
             this.Text = "Form1";
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.ExitBtn)).EndInit();

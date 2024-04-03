@@ -132,7 +132,7 @@
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Setup";
-            this.Text = "Setup";
+            this.Text = " ";
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Setup_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExitBtn)).EndInit();

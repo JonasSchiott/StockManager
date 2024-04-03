@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,13 +40,20 @@ namespace StockManager
         {
             this.WindowState = FormWindowState.Minimized;
         }
+        
+        enum Databases 
+        {
+            SQLite,
+            MongoDB
+        }
 
         private void SelectButton_Click(object sender, EventArgs e)
         {
             int selectedDatabase = DatabaseSelection.SelectedIndex;
             if (selectedDatabase < 0) return;
 
-            Console.WriteLine(selectedDatabase);
+            new ChooseColumns().Show();
+            this.Hide();
         }
     }
 }
