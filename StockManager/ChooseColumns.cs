@@ -5,9 +5,12 @@ namespace StockManager
 {
     public partial class ChooseColumns : Form
     {
-        public ChooseColumns()
+        private int database;
+
+        public ChooseColumns(int database)
         {
             InitializeComponent();
+            this.database = database;
         }
 
         private void ExitBtn_Click(object sender, EventArgs e)

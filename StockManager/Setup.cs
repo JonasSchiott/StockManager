@@ -52,7 +52,7 @@ namespace StockManager
             int selectedDatabase = DatabaseSelection.SelectedIndex;
             if (selectedDatabase < 0) return;
 
-            new ChooseColumns().Show();
+            new ChooseColumns(selectedDatabase).Show();
             this.Hide();
         }
     }

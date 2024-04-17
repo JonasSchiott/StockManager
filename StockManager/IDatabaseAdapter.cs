@@ -9,23 +9,13 @@ namespace StockManager
     internal interface IDatabaseAdapter
     {
         // Opret forbindelse.
-        bool EstablishConnection();
+        bool EstablishConnection(string connectionString);
+
+        // Hent data.
+        T GetData<T>(string query);
 
         // Opdater felt.
-        bool Update(string query);
+        bool Update(string toUpdate);
 
-    }
-
-    class MongoDB : IDatabaseAdapter
-    {
-        public bool EstablishConnection()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Update(string query)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

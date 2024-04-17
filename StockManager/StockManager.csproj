@@ -55,8 +55,8 @@
     <Compile Include="ChooseColumns.Designer.cs">
       <DependentUpon>ChooseColumns.cs</DependentUpon>
     </Compile>
+    <Compile Include="CSVDatabase.cs" />
     <Compile Include="IDatabaseAdapter.cs" />
-    <Compile Include="MongoDBBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setup.cs">
