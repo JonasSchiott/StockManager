@@ -11,11 +11,10 @@ namespace StockManager
     internal class CSVDatabase : IDatabaseAdapter
     {
         private Hashtable content = new Hashtable();
+        private string dbFileContent;
 
         public bool EstablishConnection(string connectionString)
         {
-            string dbFileContent;
-
             try
             {
                 dbFileContent = File.ReadAllText(connectionString);
@@ -37,14 +36,11 @@ namespace StockManager
             return true;
         }
 
-        public T GetData<T>(string query)
-        {
-            throw new NotImplementedException();
-        }
+        public T GetData<T>(string query) => (T) content[query];
 
         public bool Update(string toUpdate)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
